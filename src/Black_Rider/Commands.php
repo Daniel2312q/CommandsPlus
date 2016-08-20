@@ -36,7 +36,7 @@ class Commands extends PluginBase implements Listener {
 			$this->getServer()->broadcastMessage("");
 			$this->getServer()->broadcastMessage("");
 			$this->getServer()->broadcastMessage("");
-			$this->getServer()->broadcastMessage(TextFormat::GREEN . "? " . TextFormat::WHITE . "Chat zosta? wyczyszczony przez: " . TextFormat::GREEN . $player);
+			$this->getServer()->broadcastMessage(TextFormat::GREEN . "• " . TextFormat::WHITE . "Chat został wyczyszczony przez: " . TextFormat::GREEN . $player);
 			}
 		}
 }
