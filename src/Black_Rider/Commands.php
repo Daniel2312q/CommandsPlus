@@ -11,8 +11,12 @@ use pocketmine\Player;
 
 class Commands extends PluginBase implements Listener {
 	
+	public function onEnable(){
+		$this->getServer()->getPluginManager()->registerEvents($this,$this);
+		}
 	public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
-		$player = $sender->getPlayer()->getName();
+		$player = $sender->getName();
+		
 		if(strtolower($cmd->getName()) === "cc") {
 			$this->getServer()->broadcastMessage("");
 			$this->getServer()->broadcastMessage("");
