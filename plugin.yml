@@ -1,0 +1,14 @@
+
+name: CommandsPlus
+author: Black_Rider
+version: 1
+main: Black_Rider\Commands
+api: 1.13.0
+
+commands:
+ cc:
+  permission: command.cc
+  
+permissions: 
+ command.cc:
+  default: op
